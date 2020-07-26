@@ -1,22 +1,7 @@
 ---
-layout: default
 ---
-# Hello
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At 
-
-## Hallo
-
-### Hallo
-
-- 123
-- 234
-- 567
-- 099
-
-```
-print("Hallo")
-```
+# Hello other page
 
 ## Lorem ipsum
 
