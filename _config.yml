@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+title: Volker Dorna
+sass:
+        sass_dir: _sass
+        style: compressed 
