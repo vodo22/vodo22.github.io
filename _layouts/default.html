@@ -24,8 +24,25 @@
     {{ content }}
 </div>
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>{{ site.pages }}</p>
-  <p>{{ site.time }}</p>
+  <div>
+    <h1>Site Pages</h1>
+    <p>{{ site.pages }}</p>
+    <hr />
+  </div>
+  <div><h1>Site Posts</h1>
+    <p>{{ site.posts }}</p>
+    <hr />
+  </div>
+  <div>
+    <h1>Site Collections</h1>
+    <p>{{ site.collections }}</p>
+    <hr />
+  </div>
+  <div>
+    <h1>Site Time</h1>
+    <p>{{ site.time }}</p>
+    <hr />
+  </div>
 </div>
 
 </body>

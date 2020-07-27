@@ -1,4 +1,9 @@
 title: Volker Dorna
+source: ./src
 sass:
-        sass_dir: _sass
-        style: compressed 
+  sass_dir: _sass
+  style: compressed 
+
+
+kramdown:
+  enable_coderay: true
