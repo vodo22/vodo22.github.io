@@ -1,6 +1,5 @@
 ---
 ---
-
 # Hello other page
 
 ## Lorem ipsum

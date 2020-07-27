@@ -4,13 +4,20 @@
 
 ## 
 Laufende Container anzeigen
+
+~~~
 docker ps
+~~~
 
 Alle Container anzeigen
+~~~
 docker ps -a
+~~~
 
 Images anzeigen
+~~~
 docker images
+~~~
 
 
 ## Images löschen
