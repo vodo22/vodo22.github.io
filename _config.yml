@@ -1,5 +1,5 @@
 title: Volker Dorna
-source: ./src
+
 sass:
   sass_dir: _sass
   style: compressed 
