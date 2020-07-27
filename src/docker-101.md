@@ -20,6 +20,10 @@ docker images
 ~~~
 
 
+``` 
+docker images
+``` 
+
 ## Images löschen
 docker imag
 
