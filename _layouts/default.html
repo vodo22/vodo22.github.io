@@ -26,5 +26,21 @@
 
 {% include _footer.html %}
 
+
+
+
+<h3>Getting Started</h3>
+<ul>
+    {% for doc in site.docs %}
+        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<h3>Getting Started 2</h3>
+<ul>
+    {% for doc in site.pages %}
+        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endfor %}
+</ul>
 </body>
 </html>
