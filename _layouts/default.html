@@ -70,5 +70,19 @@ B = {{ site.categories.b }}
     {% for p in site.pages %}
         <li>{{ p.dir }}</li>
     {% endfor %}
+</ul>
+
+<h3>Getting Started 7</h3>
+<ul>
+
+{% for staff_member in site.books %}
+  <h2>
+    <a href="{{ staff_member.url }}">
+      {{ staff_member.name }} - {{ staff_member.position }}
+    </a>
+  </h2>
+{% endfor %}
+
+</ul>
 </body>
 </html>
