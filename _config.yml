@@ -1,5 +1,6 @@
 title: Volker Dorna
 
+collections_dir: pages
 sass:
   sass_dir: _sass
   style: compressed 
