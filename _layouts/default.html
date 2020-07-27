@@ -39,14 +39,10 @@
 <h3>Getting Started 3</h3>
 <ul>
 
-    {% for cat in site.categories %}
-        <li>{{ cat }}</li>
+    {% for coll in site.collections %}
+        <li>{{ coll.label }} </li>
     {% endfor %}
 </ul>
-SUB = {{ site.categories.sub }}
-<br/>
-B = {{ site.categories.b }}
-<br/>
 
 <h3>Getting Started 4</h3>
 <ul>
@@ -78,7 +74,7 @@ B = {{ site.categories.b }}
 {% for staff_member in site.books %}
   <h2>
     <a href="{{ staff_member.url }}">
-      {{ staff_member.name }} - {{ staff_member.position }}
+      {{ staff_member.title }} 
     </a>
   </h2>
 {% endfor %}
