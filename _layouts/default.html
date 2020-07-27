@@ -26,6 +26,7 @@
 
 {% include _footer.html %}
 
+{{ page.date }}
 
 
 <h3>Getting Started 2</h3>
@@ -42,6 +43,10 @@
         <li>{{ cat }}</li>
     {% endfor %}
 </ul>
+SUB = {{ site.categories.sub }}
+<br/>
+B = {{ site.categories.b }}
+<br/>
 
 <h3>Getting Started 4</h3>
 <ul>
