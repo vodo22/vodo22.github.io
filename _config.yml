@@ -2,6 +2,7 @@ title: Volker Dorna
 
 collections_dir: ./pages
 
+layouts_dir: /_layouts
 collections: 
   books:
       output: true
