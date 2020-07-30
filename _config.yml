@@ -8,7 +8,7 @@ collections:
   books:
       output: true
   ada:
-      output: false
+      output: true
   excel:
       output: true
 

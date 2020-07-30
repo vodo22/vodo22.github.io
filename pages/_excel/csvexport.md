@@ -1,5 +1,3 @@
----
----
 # Speichern von Dateien im CSV-Format mit "" und , 
 
 Links: 
