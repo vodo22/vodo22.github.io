@@ -56,45 +56,15 @@
         </li>
     {% endfor %}
 </ul>
-<h3>Getting Started 10</h3>
-<ul>
-
-  {% for p in site.ada %}
-    <li><a href="{{ p.url }}">{{ p.title }} -- {{ p.name }} -- {{ p.position }}</a></li>
-  {% endfor %}
-</ul>
-
 
 <h3>Getting Started 5</h3>
 <ul>
 
     {% for p in site.pages %}
-        <li><a href="{{ p.url }}"> {{ p.name }} </a></li>
+        <li><a href="{{ p.url }}"> {{ p.name }} </a> -- {{ p.collection }} -- {{ p.position }}</li>
     {% endfor %}
 </ul>
 
-<h3>Getting Started 7</h3>
-<ul>
-
-{% for p in site.books %}
-    <a href="{{ p.url }}">
-      {{ p.title }} 
-    </a>
-{% endfor %}
-
-</ul>
-
-
-<h3>Getting Started 11</h3>
-<ul>
-
-{% for p in site.documents %}
-    <a href="{{ p.url }}">
-      {{ p.title }}
-    </a>
-{% endfor %}
-
-</ul>
 
 {% include _environment.html %}
 
