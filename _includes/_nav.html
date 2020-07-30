@@ -14,7 +14,20 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/index.html">Home</a>
-      </li>    
+      </li>
+      {% for coll in site.collections %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ coll.label }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {% for p in coll.docs %}
+          <a class="dropdown-item" href="{{ p.url }}">{{ p.title }} ({{ p.name }})</a>
+          {% endfor %}
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      {% endfor %}
     </ul>
   </div>  
 </nav>
