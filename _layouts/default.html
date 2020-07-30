@@ -46,11 +46,16 @@
 
 <h3>Getting Started 4</h3>
 <ul>
-
-    {% for p in site.pages.categories %}
-        <li>{{ p.categories }}</li>
+    {% for coll in site.collections %}
+        <li>{{ coll.label }} </li>
+        <ul>
+          {% for pag in coll %}
+              <li><a href="{{ pag.url }}">{{ pag.name }}</a></li>
+          {% endfor %}
+        </ul>
     {% endfor %}
 </ul>
+
 
 <h3>Getting Started 5</h3>
 <ul>
@@ -60,21 +65,13 @@
     {% endfor %}
 </ul>
 
-<h3>Getting Started 6</h3>
-<ul>
-
-    {% for p in site.pages %}
-        <li>{{ p.dir }}</li>
-    {% endfor %}
-</ul>
-
 <h3>Getting Started 7</h3>
 <ul>
 
-{% for staff_member in site.books %}
+{% for p in site.books %}
   <h2>
     <a href="{{ staff_member.url }}">
-      {{ staff_member.title }} 
+      {{ p.title }} 
     </a>
   </h2>
 {% endfor %}
