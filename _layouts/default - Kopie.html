@@ -25,5 +25,48 @@
 </div>
 
 {% include _footer.html %}
+
+{{ page.date }}
+
+
+<h3>Getting Started 2</h3>
+<ul>
+    {% for doc in site.pages %}
+        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<h3>Getting Started 3</h3>
+<ul>
+
+    {% for coll in site.collections %}
+        <li>{{ coll.label }} </li>
+    {% endfor %}
+</ul>
+
+<h3>Getting Started 4</h3>
+<ul>
+    {% for coll in site.collections %}
+        <li>C {{ coll.label }} 
+          <ul>
+            {% for p in coll.docs %}
+                <li><a href="{{ p.url }}">P {{ p.title }} {{ p.name }} x</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Getting Started 5</h3>
+<ul>
+
+    {% for p in site.pages %}
+        <li><a href="{{ p.url }}"> {{ p.name }} </a> -- {{ p.collection }} -- {{ p.position }}</li>
+    {% endfor %}
+</ul>
+
+
+{% include _environment.html %}
+
 </body>
 </html>
