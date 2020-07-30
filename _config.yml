@@ -5,8 +5,12 @@ collections_dir: ./pages
 theme: minima
 
 collections: 
-  - books
-  - ada
+  books:
+      output: true
+  ada:
+      output: false
+  excel:
+      output: true
 
 sass:
   sass_dir: _sass
