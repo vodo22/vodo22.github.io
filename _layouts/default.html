@@ -50,19 +50,26 @@
         <li>C {{ coll.label }} 
           <ul>
             {% for p in coll %}
-                <li><a href="{{ p.url }}">P {{ p.title }}</a></li>
+                <li><a href="{{ p.url }}">P {{ p.title }} {{ p.name }} x</a></li>
             {% endfor %}
           </ul>
         </li>
     {% endfor %}
+</ul>
+<h3>Getting Started 10</h3>
+<ul>
+
+  {% for p in site.ada %}
+    <li><a href="{{ p.url }}">{{ p.title }} -- {{ p.name }} -- {{ p.position }}</a></li>
+  {% endfor %}
 </ul>
 
 
 <h3>Getting Started 5</h3>
 <ul>
 
-    {% for p in site.pages %}
-        <li>Y {{ p.collection }}</li>
+    {% for p in site.categories.books %}
+        <li>Y {{ p.name }}</li>
     {% endfor %}
 </ul>
 
@@ -76,5 +83,8 @@
 {% endfor %}
 
 </ul>
+
+{% include _environment.html %}
+
 </body>
 </html>
