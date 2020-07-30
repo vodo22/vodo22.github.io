@@ -84,6 +84,18 @@
 
 </ul>
 
+
+<h3>Getting Started 11</h3>
+<ul>
+
+{% for p in site.documents %}
+    <a href="{{ p.url }}">
+      {{ p.title }}
+    </a>
+{% endfor %}
+
+</ul>
+
 {% include _environment.html %}
 
 </body>
