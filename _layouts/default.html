@@ -47,12 +47,13 @@
 <h3>Getting Started 4</h3>
 <ul>
     {% for coll in site.collections %}
-        <li>{{ coll.label }} </li>
-        <ul>
-          {% for p in coll %}
-              <li><a href="{{ p.url }}">P {{ p.title }}</a></li>
-          {% endfor %}
-        </ul>
+        <li>C {{ coll.label }} 
+          <ul>
+            {% for p in coll %}
+                <li><a href="{{ p.url }}">P {{ p.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
     {% endfor %}
 </ul>
 
@@ -69,11 +70,9 @@
 <ul>
 
 {% for p in site.books %}
-  <h2>
     <a href="{{ p.url }}">
       {{ p.title }} 
     </a>
-  </h2>
 {% endfor %}
 
 </ul>
