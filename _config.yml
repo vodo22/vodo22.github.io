@@ -3,11 +3,11 @@ title: Volker Dorna
 collections_dir: ./pages
 
 collections: 
-  - books:
+  books:
       output: true
-  - ada:
+  ada:
       output: true
-  - duck:
+  duck:
       output: true
 
 sass:
