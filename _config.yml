@@ -4,8 +4,11 @@ collections_dir: ./pages
 
 collections: 
   - books
+      output: true
   - ada
+      output: true
   - duck
+      output: true
 
 sass:
   sass_dir: _sass
