@@ -2,7 +2,8 @@ title: Volker Dorna
 
 collections_dir: ./pages
 
-layouts_dir: /_layouts
+theme: minima
+
 collections: 
   books:
       output: true
@@ -14,7 +15,6 @@ collections:
 sass:
   sass_dir: _sass
   style: compressed 
-
 
 kramdown:
   enable_coderay: true
