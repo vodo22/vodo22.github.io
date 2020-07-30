@@ -68,8 +68,8 @@
 <h3>Getting Started 5</h3>
 <ul>
 
-    {% for p in site.categories.books %}
-        <li>Y {{ p.name }}</li>
+    {% for p in site.pages %}
+        <li><a href="{{ p.url }}"> {{ p.name }} </a></li>
     {% endfor %}
 </ul>
 
