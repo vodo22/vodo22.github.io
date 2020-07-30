@@ -1,4 +1,5 @@
 ---
+layout: default 
 ---
 # Seite 2
 
