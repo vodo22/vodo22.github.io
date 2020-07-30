@@ -49,7 +49,7 @@
     {% for coll in site.collections %}
         <li>C {{ coll.label }} 
           <ul>
-            {% for p in coll %}
+            {% for p in coll.docs %}
                 <li><a href="{{ p.url }}">P {{ p.title }} {{ p.name }} x</a></li>
             {% endfor %}
           </ul>
