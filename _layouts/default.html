@@ -49,8 +49,8 @@
     {% for coll in site.collections %}
         <li>{{ coll.label }} </li>
         <ul>
-          {% for pag in coll %}
-              <li><a href="{{ pag.url }}">{{ pag.name }}</a></li>
+          {% for p in coll %}
+              <li><a href="{{ p.url }}">{{ p.title }}</a></li>
           {% endfor %}
         </ul>
     {% endfor %}
@@ -70,7 +70,7 @@
 
 {% for p in site.books %}
   <h2>
-    <a href="{{ staff_member.url }}">
+    <a href="{{ p.url }}">
       {{ p.title }} 
     </a>
   </h2>
